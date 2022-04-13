@@ -1,7 +1,5 @@
 <?php
     
-    //echo get_option("blogname");
-
 get_header();
 
 if(have_posts()){
@@ -19,19 +17,3 @@ get_footer();
 
 
 ?>
-
-
-<?php
-/*
-    $text_var = "Det här är en övning";
-
-    echo $text_var;
-
-    $text_var_filtrera = apply_filters('ett_filter', $text_var);
-
-    echo $text_var_filtrera;
-*/
-?>
-
-
-

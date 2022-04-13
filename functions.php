@@ -7,6 +7,8 @@ function runAll() {
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 add_theme_support('widgets');
+//add_theme_support('woocommerse');
+
 
 add_image_size('produkt-storlek', 250, 250, true);
 
@@ -30,9 +32,9 @@ function registrera_menu() {
     add_action('wp_head', 'min_funktion', 90);
     add_action('wp_footer', 'min_funktion', 90);
 
-function min_funktion() {
+/*function min_funktion() {
     echo "min funktion";
-}
+}*/
 
 add_action('wp_enqueue_scripts', 'runAll');
 
@@ -42,7 +44,7 @@ add_action('wp_enqueue_scripts', 'runAll');
  }
 
  //filter kod
-
+/*
  add_filter('the_content', 'byt_bokstav_funktion');
 
  function byt_bokstav_funktion( $texten ) {
@@ -52,5 +54,5 @@ add_action('wp_enqueue_scripts', 'runAll');
     return $text;
 
  }
-
+*/
 ?>
